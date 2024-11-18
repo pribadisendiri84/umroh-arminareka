@@ -2380,3 +2380,37 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+/* Posisi tombol navigasi agar lebih jelas */
+.custom-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5); /* Background semi-transparan */
+  color: #fff;
+  width: 50px; /* Lebih besar untuk akses yang lebih mudah */
+  height: 50px; /* Lebih besar untuk akses yang lebih mudah */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px; /* Ukuran ikon lebih besar */
+  transition: background 0.3s, transform 0.3s; /* Menambahkan animasi */
+}
+
+/* Posisi tombol kiri dan kanan */
+.swiper-button-prev {
+  left: -30px; /* Perbaikan untuk posisi lebih lebar */
+}
+
+.swiper-button-next {
+  right: -30px; /* Perbaikan untuk posisi lebih lebar */
+}
+
+/* Efek hover untuk tombol */
+.custom-nav:hover {
+  background: #f78f1f; /* Warna hover */
+  transform: scale(1.1); /* Menambah efek pembesaran saat hover */
+}

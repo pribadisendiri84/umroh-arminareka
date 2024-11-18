@@ -219,3 +219,13 @@
   });
 
 })();
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Initialize Swiper for Pricing Section
+  const pricingElement = document.querySelector('.init-swiper-pricing');
+  if (pricingElement) {
+    const pricingConfig = JSON.parse(pricingElement.querySelector('.swiper-config').textContent);
+    new Swiper(pricingElement, pricingConfig);
+  }
+});
